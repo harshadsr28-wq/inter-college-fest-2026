@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Mail, MapPin, Phone, ShieldCheck, Heart } from 'lucide-react';
+import { Sparkles, Mail, MapPin, Phone, ShieldCheck, Linkedin } from 'lucide-react';
 
 export default function Footer({ onRegisterClick }) {
   const currentYear = 2026;
@@ -88,8 +88,25 @@ export default function Footer({ onRegisterClick }) {
 
         </div>
 
+        {/* Developer Credit Bar */}
+        <div className="pt-8 pb-4 flex items-center justify-center text-xs">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/40 transition-all duration-300 shadow-sm">
+            <span className="text-slate-400">Designed &amp; Built by</span>
+            <a
+              href="https://www.linkedin.com/in/harshad-sr-99685238b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-semibold text-slate-200 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-indigo-400 transition-all duration-200 group"
+              aria-label="S R Harshad's LinkedIn Profile"
+            >
+              <span>S R Harshad</span>
+              <Linkedin className="w-3.5 h-3.5 text-[#0a66c2] group-hover:scale-110 transition-transform" />
+            </a>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs border-t border-slate-900">
           <p className="text-slate-500">
             © {currentYear} Inter-College Fest Organizing Committee. All rights reserved.
           </p>
